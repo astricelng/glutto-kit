@@ -1,0 +1,9 @@
+{
+    "name": "astricelng/glutto-kit",
+    "extra": {
+        "statamic": {
+            "name": "Glutto Statamic Peak",
+            "description": "Glutto Statamic Peak starter kit"
+        }
+    }
+}
