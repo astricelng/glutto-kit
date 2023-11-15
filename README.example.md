@@ -18,9 +18,9 @@ Dump your .env values here with sensitive data removed.
 
 ```env
 Dump your .env values here with sensitive data removed. The following is a production example that uses full static caching:
-APP_NAME="Statamic Peak"
+APP_NAME="testKit"
 APP_ENV=production
-APP_KEY=
+APP_KEY="base64:XobFzJodGMhFv+Ks2ZKEDaBYiHufP1Z2I3L2kZQsHLI="
 APP_DEBUG=false
 APP_URL=
 

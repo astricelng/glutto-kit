@@ -1,9 +1,9 @@
 {
-    "name": "astricelng/glutto-kit",
+    "name": "my-vendor-name/glutto-test",
     "extra": {
         "statamic": {
-            "name": "Glutto Statamic Peak",
-            "description": "Glutto Statamic Peak starter kit"
+            "name": "Glutto Test",
+            "description": "Glutto Test starter kit"
         }
     }
 }
