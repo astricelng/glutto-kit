@@ -1,19 +1,4 @@
 tabs:
-  general:
-    display: General
-    sections:
-      -
-        display: Universal
-        instructions: 'Configure universal meta tags.'
-        fields:
-          -
-            import: 'statamic-peak-browser-appearance::globals_browser_appearance_general_universal'
-      -
-        display: Theme
-        instructions: 'Configure universal theme meta tags.'
-        fields:
-          -
-            import: 'statamic-peak-browser-appearance::globals_browser_appearance_general_theme'
   favicons:
     display: Favicons
     sections:

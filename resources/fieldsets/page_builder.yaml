@@ -3,12 +3,9 @@ fields:
   -
     handle: page_builder
     field:
-      type: replicator
-      localizable: true
-      hide_display: true
       collapse: true
-      listable: false
-      display: 'Page builder'
+      previews: true
+      fullscreen: true
       sets:
         interactive:
           display: Interactive
@@ -23,7 +20,7 @@ fields:
                 -
                   import: form
             cards:
-              display: 'Cards'
+              display: Cards
               instructions: 'Show linkable cards with text.'
               icon: link
               fields:
@@ -41,6 +38,11 @@ fields:
               fields:
                 -
                   import: article
+      type: replicator
+      display: 'Page builder'
+      icon: replicator
+      listable: false
       instructions_position: above
       visibility: visible
-      previews: true
+      replicator_preview: true
+      hide_display: false

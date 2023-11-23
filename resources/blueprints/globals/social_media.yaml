@@ -9,6 +9,9 @@ tabs:
           -
             handle: social_media
             field:
+              collapse: false
+              previews: true
+              fullscreen: true
               sets:
                 main:
                   display: Main
@@ -21,19 +24,31 @@ tabs:
                       icon: social-mail-send-email-message
                       fields:
                         -
-                          handle: handle
+                          handle: email
                           field:
                             input_type: text
+                            antlers: false
                             type: text
-                            localizable: true
-                            listable: hidden
                             display: Email
-                            validate: required
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            validate:
+                              - required
                         -
                           handle: prefix
                           field:
-                            type: hidden
                             default: 'mailto:'
+                            type: hidden
+                            icon: hidden
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
                     facebook:
                       display: Facebook
                       instructions: null
@@ -43,17 +58,29 @@ tabs:
                           handle: handle
                           field:
                             input_type: text
-                            type: text
-                            localizable: true
-                            listable: hidden
                             prepend: 'https://www.facebook.com/'
+                            antlers: false
+                            type: text
                             display: Handle
-                            validate: required
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            validate:
+                              - required
                         -
                           handle: prefix
                           field:
-                            type: hidden
                             default: 'https://www.facebook.com/'
+                            type: hidden
+                            icon: hidden
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
                     github:
                       display: GitHub
                       instructions: null
@@ -63,17 +90,29 @@ tabs:
                           handle: handle
                           field:
                             input_type: text
-                            type: text
-                            localizable: true
-                            listable: hidden
                             prepend: 'https://www.github.com/'
+                            antlers: false
+                            type: text
                             display: Handle
-                            validate: required
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            validate:
+                              - required
                         -
                           handle: prefix
                           field:
-                            type: hidden
                             default: 'https://www.github.com/'
+                            type: hidden
+                            icon: hidden
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
                     instagram:
                       display: Instagram
                       instructions: null
@@ -83,17 +122,29 @@ tabs:
                           handle: handle
                           field:
                             input_type: text
-                            type: text
-                            localizable: true
-                            listable: hidden
                             prepend: 'https://www.instagram.com/'
+                            antlers: false
+                            type: text
                             display: Handle
-                            validate: required
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            validate:
+                              - required
                         -
                           handle: prefix
                           field:
-                            type: hidden
                             default: 'https://www.instagram.com/'
+                            type: hidden
+                            icon: hidden
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
                     linkedin:
                       display: LinkedIn
                       instructions: null
@@ -103,31 +154,29 @@ tabs:
                           handle: handle
                           field:
                             input_type: text
-                            type: text
-                            localizable: true
-                            listable: hidden
                             prepend: 'https://www.linkedin.com/'
+                            antlers: false
+                            type: text
                             display: Handle
-                            validate: required
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            validate:
+                              - required
                         -
                           handle: prefix
                           field:
-                            type: hidden
                             default: 'https://www.linkedin.com/'
-                    mastodon:
-                      display: Mastodon
-                      instructions: null
-                      icon: social-mastodon
-                      fields:
-                        -
-                          handle: handle
-                          field:
-                            input_type: text
-                            type: text
-                            localizable: true
+                            type: hidden
+                            icon: hidden
                             listable: hidden
-                            display: URL
-                            validate: required
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
                     pinterest:
                       display: Pinterest
                       instructions: null
@@ -137,17 +186,29 @@ tabs:
                           handle: handle
                           field:
                             input_type: text
-                            type: text
-                            localizable: true
-                            listable: hidden
                             prepend: 'https://www.pinterest.com/'
+                            antlers: false
+                            type: text
                             display: URL
-                            validate: required
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            validate:
+                              - required
                         -
                           handle: prefix
                           field:
-                            type: hidden
                             default: 'https://www.pinterest.com/'
+                            type: hidden
+                            icon: hidden
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
                     vimeo:
                       display: Vimeo
                       instructions: null
@@ -157,17 +218,29 @@ tabs:
                           handle: handle
                           field:
                             input_type: text
-                            type: text
-                            localizable: true
-                            listable: hidden
                             prepend: 'https://www.vimeo.com/'
+                            antlers: false
+                            type: text
                             display: Handle
-                            validate: required
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            validate:
+                              - required
                         -
                           handle: prefix
                           field:
-                            type: hidden
                             default: 'https://www.vimeo.com/'
+                            type: hidden
+                            icon: hidden
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
                     youtube:
                       display: YouTube
                       instructions: null
@@ -177,23 +250,34 @@ tabs:
                           handle: handle
                           field:
                             input_type: text
-                            type: text
-                            localizable: true
-                            listable: hidden
                             prepend: 'https://www.youtube.com/'
+                            antlers: false
+                            type: text
                             display: Handle
-                            validate: required
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            validate:
+                              - required
                         -
                           handle: prefix
                           field:
-                            type: hidden
                             default: 'https://www.youtube.com/'
+                            type: hidden
+                            icon: hidden
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
               type: replicator
-              listable: hidden
-              localizable: true
               display: 'Social media'
+              icon: replicator
+              listable: hidden
               instructions_position: above
               visibility: visible
-              collapse: false
-              previews: true
+              replicator_preview: true
               hide_display: false

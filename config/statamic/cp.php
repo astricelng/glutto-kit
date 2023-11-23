@@ -49,13 +49,6 @@ return [
             'collection' => 'pages',
             'width' => 50,
         ],
-        [
-            'type' => 'form',
-            'form' => 'contact',
-            'fields' => ['name', 'email'],
-            'limit' => '5',
-            'width' => 100,
-        ],
     ],
 
     /*
@@ -64,7 +57,12 @@ return [
     |--------------------------------------------------------------------------
     |
     | When a date is encountered throughout the Control Panel, it will be
-    | rendered in the following format. Any PHP date variables are permitted.
+    | rendered in the following format unless overridden in specific
+    | fields, and so on. Any PHP date variables are permitted.
+    |
+    | This takes precedence over the date_format in system.php.
+    |
+    | https://www.php.net/manual/en/function.date.php
     |
     */
 
@@ -75,7 +73,8 @@ return [
     | Pagination
     |--------------------------------------------------------------------------
     |
-    | The numbers of items to show on each paginated page.
+    | Here you may define the default pagination size as well as the options
+    | the user can select on any paginated listing in the Control Panel.
     |
     */
 
@@ -108,7 +107,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Login Theme
+    | Theme
     |--------------------------------------------------------------------------
     |
     | Optionally spice up the login and other outside-the-control-panel

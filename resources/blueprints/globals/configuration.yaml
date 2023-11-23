@@ -11,7 +11,6 @@ tabs:
             field: common.entry
             config:
               display: '404'
-              width: 50
               instructions: 'Show all content of page whenever an URL does not exist.'
               collections:
                 - pages
@@ -26,29 +25,35 @@ tabs:
             field:
               input_type: text
               antlers: false
-              display: 'Copyright name'
               type: text
+              display: 'Copyright name'
               icon: text
               instructions: 'Falls back to the application name.'
               width: 50
               listable: hidden
               instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
           -
             handle: copyright_since
             field:
-              placeholder: '2020'
               input_type: number
+              placeholder: '2023'
+              default: '2023'
               character_limit: 4
               prepend: ©
               antlers: false
-              default: '2020'
-              display: 'Copyright since'
-              instructions: 'The website will add ` - current_year ` if they differ.'
               type: text
+              display: 'Copyright since'
               icon: text
+              instructions: 'The website will add ` - current_year ` if they differ.'
               width: 50
               listable: hidden
               instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
               validate:
                 - required
       -
@@ -64,33 +69,52 @@ tabs:
                 pdf: PDF
               default: none
               type: button_group
-              instructions: 'Form consent fields will link to this Privacy Policy.'
-              instructions_position: below
-              listable: false
-              localizable: true
               display: 'Privacy statement'
+              icon: button_group
+              instructions: 'Form consent fields will link to this Privacy Policy.'
               width: 50
+              listable: false
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
           -
             handle: privacy_statement_asset
-            field: common.image
-            config:
+            field:
+              max_files: 1
+              mode: list
               container: files
-              localizable: true
-              listable: hidden
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
               display: 'Privacy statement (PDF)'
+              icon: assets
               width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
               if:
                 privacy_statement_type: 'equals pdf'
               validate:
                 - 'required_if:privacy_statement_type,pdf'
           -
             handle: privacy_statement_entry
-            field: common.entry
-            config:
-              localizable: true
-              listable: hidden
+            field:
+              max_items: 1
+              mode: default
+              create: true
+              type: entries
               display: 'Privacy statement (entry)'
-              width: 50
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
               if:
                 privacy_statement_type: 'equals entry'
               validate:
@@ -105,22 +129,23 @@ tabs:
               options:
                 none: None
                 entry: Entry
-                pdf: PDF
+                pdf: Pdf
               default: none
               type: button_group
-              instructions: 'The Cookie Banner will link to this Cookie Notice.'
-              instructions_position: below
-              listable: false
-              localizable: true
               display: 'Cookie notice'
+              icon: button_group
+              instructions: 'The Cookie Banner will link to this Cookie Notice.'
               width: 50
+              listable: false
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
           -
             handle: cookie_notice_asset
             field: common.image
             config:
               container: files
-              localizable: true
-              listable: hidden
               display: 'Cookie notice (PDF)'
               width: 50
               if:
@@ -129,12 +154,18 @@ tabs:
                 - 'required_if:cookie_notice_type,pdf'
           -
             handle: cookie_notice_entry
-            field: common.entry
-            config:
-              localizable: true
-              listable: hidden
+            field:
+              max_items: 1
+              mode: default
+              create: true
+              type: entries
               display: 'Cookie notice (entry)'
-              width: 50
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
               if:
                 cookie_notice_type: 'equals entry'
               validate:

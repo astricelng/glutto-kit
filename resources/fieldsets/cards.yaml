@@ -4,21 +4,18 @@ fields:
     handle: title
     field:
       input_type: text
+      antlers: false
       type: text
-      localizable: true
-      listable: hidden
       display: Title
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
   -
     handle: cards
     field:
-      reorderable: true
-      type: replicator
-      localizable: true
-      listable: hidden
-      display: Cards
-      replicator_preview: false
-      instructions_position: above
-      visibility: visible
       collapse: accordion
       previews: true
       fullscreen: true
@@ -37,20 +34,40 @@ fields:
                   handle: title
                   field:
                     input_type: text
+                    antlers: false
                     type: text
-                    localizable: true
-                    listable: hidden
-                    validate: required
                     display: Title
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                    validate:
+                      - required
                 -
                   handle: text
-                  field: common.text_plain
-                  config:
+                  field:
+                    antlers: false
+                    type: textarea
                     display: Text
+                    icon: textarea
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
                 -
                   handle: button
                   field: buttons.buttons
                   config:
                     display: Button
                     max_rows: 1
-      hide_display: true
+      type: replicator
+      display: Cards
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: false
+      hide_display: false

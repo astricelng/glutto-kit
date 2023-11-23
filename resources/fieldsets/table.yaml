@@ -6,36 +6,52 @@ fields:
   -
     handle: first_row_headers
     field:
-      display: First row as header
+      default: false
       type: toggle
+      display: 'First row as header'
       icon: toggle
-      listable: hidden
-      width: 50
       instructions: 'Show the first row as header and give it a header styling.'
+      width: 50
+      listable: hidden
       instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
   -
     handle: first_column_headers
     field:
-      display: First column as header
+      default: false
       type: toggle
+      display: 'First column as header'
       icon: toggle
-      listable: hidden
-      width: 50
       instructions: 'Show the first column as header and give it a header styling.'
+      width: 50
+      listable: hidden
       instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
   -
     handle: table
     field:
-      display: Table
       type: table
+      display: Table
       icon: table
-      localizable: true
       listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
   -
     handle: caption
     field:
       input_type: text
+      antlers: false
       type: text
-      localizable: true
-      listable: hidden
       display: Caption
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

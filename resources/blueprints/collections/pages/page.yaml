@@ -11,12 +11,22 @@ tabs:
             field:
               type: text
               required: true
-              input_type: text
-              localizable: true
-              listable: true
-              display: Title
               validate:
                 - required
+              display: Title
+              instructions_position: above
+              listable: true
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
       -
         display: 'Page builder'
         fields:
@@ -59,18 +69,12 @@ tabs:
     display: Sidebar
     sections:
       -
-        display: Meta
         fields:
           -
             handle: slug
             field:
               type: slug
               localizable: true
-              generate: true
-              listable: hidden
-              display: Slug
-              validate:
-                - required
           -
             handle: parent
             field:
@@ -80,9 +84,3 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
-              display: Parent
-              instructions_position: above
-              visibility: visible
-              mode: default
-              create: true
-              hide_display: false

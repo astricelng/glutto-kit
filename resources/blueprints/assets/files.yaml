@@ -1,4 +1,5 @@
-sections:
+tabs:
   main:
     display: Main
-    fields: {  }
+    sections:
+      - {  }

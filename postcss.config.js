@@ -5,4 +5,4 @@ module.exports = {
         '@csstools/postcss-oklab-function': { 'preserve': true },
         autoprefixer: {},
     },
-};
+}

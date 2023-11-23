@@ -9,12 +9,12 @@ fields:
       mode: stacked
       add_row: 'Add button'
       reorderable: true
+      fullscreen: false
       type: grid
-      localizable: true
-      listable: hidden
       display: Buttons
-      replicator_preview: false
+      icon: grid
+      listable: hidden
       instructions_position: above
       visibility: visible
-      fullscreen: false
+      replicator_preview: false
       hide_display: false

@@ -4,19 +4,38 @@ fields:
     handle: title
     field:
       input_type: text
+      antlers: false
       type: text
-      localizable: true
-      listable: hidden
       display: Title
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
   -
     handle: text
-    field: common.text_plain
+    field:
+      antlers: false
+      type: textarea
+      display: 'Text plain'
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
   -
     handle: form
     field:
       max_items: 1
       type: form
-      listable: hidden
       display: Form
+      icon: form
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
       validate:
         - required

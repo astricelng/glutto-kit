@@ -4,24 +4,29 @@ fields:
     handle: label
     field:
       input_type: text
-      type: text
-      localizable: true
-      listable: false
-      display: Label
-      width: 66
-      replicator_preview: false
-      instructions_position: above
       antlers: false
+      type: text
+      display: Label
+      icon: text
+      width: 66
+      listable: false
+      instructions_position: above
+      visibility: visible
+      replicator_preview: false
+      hide_display: false
   -
     handle: show_controls
     field:
       mode: toggle
-      display: 'Show controls'
       type: revealer
+      display: 'Show controls'
       icon: revealer
       width: 33
       listable: hidden
       instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
   -
     handle: link_type
     field:
@@ -30,29 +35,31 @@ fields:
         url: URL
         email: Email
         tel: Tel
-        sms: SMS
-        asset: Asset
-      type: button_group
-      localizable: true
       default: entry
-      listable: false
+      type: button_group
       display: 'Link type'
-      replicator_preview: false
+      icon: button_group
       width: 66
-      if:
-        show_controls: 'equals true'
+      listable: false
       instructions_position: above
       visibility: visible
-      always_save: false
+      replicator_preview: false
+      hide_display: false
+      if:
+        show_controls: 'equals true'
   -
     handle: target_blank
     field:
+      default: false
       type: toggle
-      localizable: true
+      display: 'Open in new window'
+      icon: toggle
       width: 33
       listable: false
-      display: 'Open in new window'
+      instructions_position: above
+      visibility: visible
       replicator_preview: false
+      hide_display: false
       if:
         show_controls: 'equals true'
   -
@@ -60,130 +67,129 @@ fields:
     field:
       max_items: 1
       mode: default
+      create: true
       type: entries
-      localizable: true
+      display: Entry
+      icon: entries
       width: 50
       listable: false
-      display: Entry
+      instructions_position: above
+      visibility: visible
       replicator_preview: false
+      hide_display: false
+      if:
+        show_controls: 'equals true'
+        link_type: 'equals entry'
       validate:
         - 'required_if:{this}.link_type,entry'
-      if:
-        link_type: entry
-        show_controls: 'equals true'
   -
     handle: url
     field:
-      placeholder: 'https://site.com'
       input_type: url
+      placeholder: 'https://site.com'
+      antlers: false
       type: text
-      localizable: true
-      listable: false
       display: URL
+      icon: text
       width: 50
+      listable: false
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      if:
+        link_type: 'equals url'
+        show_controls: 'equals true'
       validate:
         - 'required_if:{this}.link_type,url'
-      if:
-        link_type: url
-        show_controls: 'equals true'
   -
     handle: email
     field:
-      placeholder: info@site.com
       input_type: email
+      placeholder: info@site.com
+      antlers: false
       type: text
-      localizable: true
-      listable: false
       display: E-mail
+      icon: text
       width: 50
+      listable: false
+      instructions_position: above
+      visibility: visible
       replicator_preview: false
+      hide_display: false
+      if:
+        link_type: 'equals email'
+        show_controls: 'equals true'
       validate:
         - 'required_if:{this}.link_type,email'
-      if:
-        link_type: email
-        show_controls: 'equals true'
   -
     handle: tel
     field:
-      placeholder: '+0 (0)12 345678'
       input_type: tel
+      placeholder: '+0 (0)12 345678'
+      antlers: false
       type: text
-      localizable: true
-      listable: false
       display: Telephone
+      icon: text
       width: 50
+      listable: false
+      instructions_position: above
+      visibility: visible
       replicator_preview: false
+      hide_display: false
+      if:
+        link_type: 'equals tel'
+        show_controls: 'equals true'
       validate:
         - 'required_if:{this}.link_type,tel'
-      if:
-        link_type: tel
-        show_controls: 'equals true'
-  -
-    handle: sms
-    field:
-      placeholder: '+0 (0)12 345678'
-      input_type: tel
-      type: text
-      localizable: true
-      listable: false
-      display: Telephone
-      width: 50
-      replicator_preview: false
-      validate:
-        - 'required_if:{this}.link_type,sms'
-      if:
-        link_type: sms
-        show_controls: 'equals true'
-  -
-    handle: asset
-    field: common.image
-    config:
-      localizable: true
-      display: Asset
-      container: files
-      width: 50
-      validate:
-        - 'required_if:{this}.link_type,asset'
-      if:
-        link_type: asset
-        show_controls: 'equals true'
   -
     handle: button_type
     field:
       options:
         button: Button
         inline: Inline
-      type: button_group
-      localizable: true
       default: button
-      listable: false
+      type: button_group
       display: 'Button type'
+      icon: button_group
+      listable: false
+      instructions_position: above
+      visibility: visible
       replicator_preview: false
+      hide_display: false
       if:
         show_controls: 'equals true'
   -
     handle: attr_title
     field:
-      placeholder: 'Learn more'
       input_type: text
+      placeholder: 'Learn more'
+      antlers: false
       type: text
-      localizable: true
-      listable: false
       display: Title
+      icon: text
       width: 50
+      listable: false
+      instructions_position: above
+      visibility: visible
       replicator_preview: false
+      hide_display: false
       if:
         show_controls: 'equals true'
   -
     handle: attr_aria
     field:
-      placeholder: 'Download the PDF'
       input_type: text
+      placeholder: 'Download the PDF'
+      antlers: false
       type: text
-      localizable: true
-      listable: false
       display: 'Aria label'
+      icon: text
       width: 50
+      listable: false
+      instructions_position: above
+      visibility: visible
       replicator_preview: false
+      hide_display: false
       if:
         show_controls: 'equals true'

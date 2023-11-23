@@ -14,21 +14,22 @@ fields:
         - quote
         - removeformat
         - anchor
+      smart_typography: true
       save_html: false
+      inline: false
       toolbar_mode: fixed
+      reading_time: true
+      word_count: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      remove_empty_nodes: trim
+      antlers: false
       link_noopener: false
       link_noreferrer: false
       target_blank: false
-      reading_time: true
-      fullscreen: true
-      allow_source: true
-      type: bard
-      localizable: true
-      listable: hidden
-      display: Article
-      replicator_preview: false
-      validate:
-        - required
+      container: files
       sets:
         interactive:
           display: Interactive
@@ -47,13 +48,6 @@ fields:
           instructions: 'Text based sets.'
           icon: text-formatting-initial-letter
           sets:
-            pull_quote:
-              display: 'Pull quote'
-              instructions: 'Add a pull quote with an optional author.'
-              icon: text-formatting-quotation
-              fields:
-                -
-                  import: pull_quote
             table:
               display: Table
               instructions: 'Add a data table with headers, rows and columns.'
@@ -80,16 +74,16 @@ fields:
               fields:
                 -
                   import: video
-      container: files
-      enable_input_rules: true
-      enable_paste_rules: true
+      always_show_set_button: false
+      collapse: false
+      previews: true
+      type: bard
+      display: Article
+      icon: bard
+      listable: hidden
       instructions_position: above
       visibility: visible
-      always_save: false
-      previews: true
-      antlers: false
-      remove_empty_nodes: trim
-      collapse: false
-      smart_typography: true
-      inline: false
+      replicator_preview: false
       hide_display: false
+      validate:
+        - required

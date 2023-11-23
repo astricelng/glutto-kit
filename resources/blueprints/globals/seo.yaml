@@ -45,12 +45,6 @@ tabs:
     display: 'Social Sharing'
     sections:
       -
-        display: 'Generate Social Images'
-        instructions: 'Automatically generate Social Images'
-        fields:
-          -
-            import: 'statamic-peak-seo::globals_seo_social_generate_social_images'
-      -
         display: Defaults
         instructions: 'Default settings for Social Sharing.'
         fields:

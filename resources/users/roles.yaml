@@ -11,8 +11,6 @@ editor:
     - 'edit other authors pages entries'
     - 'publish other authors pages entries'
     - 'delete other authors pages entries'
-    - 'view main nav'
-    - 'edit main nav'
     - 'edit configuration globals'
     - 'edit social_media globals'
     - 'view files assets'
@@ -31,16 +29,6 @@ editor:
     - 'upload social_images assets'
     - 'edit social_images assets'
     - 'delete social_images assets'
-    - 'view contact form submissions'
-    - 'delete contact form submissions'
-    - 'access default site'
-marketeer:
-  title: Marketeer
-  permissions:
-    - 'access cp'
-    - 'edit redirects globals'
-    - 'edit seo globals'
-    - 'access default site'
 user_management:
   title: 'User management'
   permissions:
@@ -50,12 +38,5 @@ user_management:
     - 'create users'
     - 'delete users'
     - 'change passwords'
-    - 'assign roles'
     - 'assign user groups'
-    - 'access default site'
-form_editor:
-  title: 'Form editor'
-  permissions:
-    - 'configure form fields'
-    - 'configure forms'
-    - 'access default site'
+    - 'assign roles'

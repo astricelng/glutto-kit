@@ -92,7 +92,8 @@ return [
         |
         | Rather than specifying your manipulation params in your templates with
         | the glide tag, you may define them here and reference their handles.
-        | They will also be automatically generated when you upload assets.
+        | They may also be automatically generated when you upload assets.
+        | Containers can be configured to warm these caches on upload.
         |
         */
 
@@ -121,7 +122,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Enabling this will make Glide automatically crop assets at their focal
-    | point (at at the center if no focal point is defined). Otherwise,
+    | point (which is the center if no focal point is defined). Otherwise,
     | you will need to manually add any crop related parameters.
     |
     */

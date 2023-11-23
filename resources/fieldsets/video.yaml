@@ -3,26 +3,34 @@ fields:
   -
     handle: video_url
     field:
-      placeholder: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
       input_type: url
+      placeholder: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+      antlers: false
       type: text
-      localizable: true
+      display: Video
+      icon: text
+      instructions: 'YouTube or Vimeo URL.'
       width: 50
       listable: hidden
-      display: 'Video'
-      instructions: "YouTube or Vimeo URL."
       instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
   -
     handle: size
     field: common.size
     config:
-      localizable: true
       width: 50
   -
     handle: caption
     field:
       input_type: text
+      antlers: false
       type: text
-      localizable: true
-      listable: hidden
       display: Caption
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

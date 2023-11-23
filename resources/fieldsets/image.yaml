@@ -14,7 +14,12 @@ fields:
     handle: caption
     field:
       input_type: text
+      antlers: false
       type: text
-      localizable: true
-      listable: hidden
       display: Caption
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

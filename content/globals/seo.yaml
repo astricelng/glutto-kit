@@ -7,7 +7,6 @@ data:
   hreflang_auto: true
   json_ld_type: none
   breadcrumbs: false
-  use_social_image_generation: false
   use_sitemap: true
   sitemap_collections:
     - pages
