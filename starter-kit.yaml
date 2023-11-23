@@ -28,7 +28,6 @@ export_paths:
   - public/favicons/.gitkeep
   - public/files/.gitkeep
   - public/social_images/.gitkeep
-  - public/visuals
   - resources/blueprints
   - resources/css/custom.css
   - resources/css/site.css
