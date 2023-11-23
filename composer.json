@@ -1,5 +1,5 @@
 {
-    "name": "my-vendor-name/glutto-test",
+    "name": "astricelng/glutto-kit",
     "extra": {
         "statamic": {
             "name": "Glutto Test",
